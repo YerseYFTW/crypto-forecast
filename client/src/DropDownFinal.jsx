@@ -32,6 +32,7 @@ function Dropp({selectedChain, onChainSelected }) {
   const handleDropdownSelect = (text) => {
     onChainSelected(text); // Update selected item text
     setIsMenuOpen(false); // Close the dropdown menu after selecting an item
+    console.log(text);
 };
 
   const toggleMenu = () => {
@@ -39,7 +40,7 @@ function Dropp({selectedChain, onChainSelected }) {
   };
 
   return (
-    <div style={{ display: 'block', width: '300px', padding: '30px', position: 'relative' }}>
+    <div style={{ display: 'block', width: '300px', padding: '0px', position: 'relative' }}>
       
       <Dropdown show={isMenuOpen} onSelect={handleDropdownSelect} 
       style={{

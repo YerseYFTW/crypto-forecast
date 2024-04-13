@@ -1,0 +1,24 @@
+.parent-container {
+    position:relative;
+    /*top:auto;*/
+    top:-180px;
+    border: 3px solid black;
+    border-radius: 30px;
+    max-width: fit-content;
+
+
+    display:flex;
+    justify-content: space-around; /* Adjust spacing between components */
+  }
+  
+  .component-container {
+    flex: 1; /* Each component container takes equal space */
+    padding: 16px; /* Add padding around each component */
+   /* border: 1px solid #ccc; /* Add border for visual separation */
+  }
+  .component-container1 {
+    flex: 1; /* Each component container takes equal space */
+    padding: 20px; /* Add padding around each component */
+    /*border: 1px solid #ccc;  Add border for visual separation */
+  }
+  
