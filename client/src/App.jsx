@@ -1,20 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import { BackendService } from "@genezio-sdk/crypto-forecast";
-import './App.css'
+//import { useState } from 'react'
+//import reactLogo from './assets/react.svg'
+//import { BackendService } from "@genezio-sdk/crypto-forecast";
+import './App.css';
+
+//import Dropp from './DropDownFinal';
+//import DatePickerComponent from './DatePick'
+//import OtherComponent from './date-picker/OtherComponent';
+import ParentComponent from './ParentDatePicker';
+//import DateTimePicker from './datehour';
+//import Sendd from './SendCall'  <Sendd/>
+//import DateTimePicker from './datehour';
+
 
 function App() {
-  const [name, setName] = useState("");
-  const [response, setResponse] = useState("");
+ // function timestamp(){
 
-  async function sayHello() {
-    setResponse(await BackendService.hello(name));
-  }
-
+  //}
   return (
-    <>
-      <div>
-        <a href="https://genezio.com" target="_blank">
+    <div className="app-container">
+      
+    
+      <ParentComponent/>
+      
+    </div>
+  );
+}
+
+/*<a href="https://genezio.com" target="_blank">
           <img
             src="https://raw.githubusercontent.com/Genez-io/graphics/main/svg/Logo_Genezio_White.svg"
             className="logo genezio light"
@@ -42,10 +54,5 @@ function App() {
         <br />
 
         <button onClick={() => sayHello()}>Say Hello</button>
-        <p className="read-the-docs">{response}</p>
-      </div>
-    </>
-  );
-}
-
+        <p className="read-the-docs">{response}</p>*/
 export default App
