@@ -34,8 +34,8 @@ function ParentComponent() {
     </div>
     <div>
     <p style={{fontSize:'30px'}}>Forecasted price for {selectedChain} is: </p>
-    <p style={{fontSize:'80px', color:'green'}}>{selectedPrice ? `$${selectedPrice.toFixed(2)}` : '$NULL'}</p>
-    <p style={{fontSize:'30px'}}>with accuracy of: {selectedAccuracy ? selectedAccuracy :"NULL"}</p>
+    <p style={{fontSize:'80px', color:'green'}}>{selectedPrice ? `$${selectedPrice.toFixed(2)}` : 'N/A'}</p>
+    <p style={{fontSize:'30px'}}>with accuracy of: {selectedAccuracy ? selectedAccuracy :"N/A"}</p>
   </div>
   </div>
   );
